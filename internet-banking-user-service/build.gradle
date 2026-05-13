@@ -25,10 +25,8 @@ dependencies {
     //SPRING CLOUD CONFIG
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
-    implementation ('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client') {
-        exclude group: 'javax.ws.rs', module: 'jsr311-api'
-    }
-    implementation 'org.keycloak:keycloak-admin-client:12.0.4'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.keycloak:keycloak-admin-client:24.0.5'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
